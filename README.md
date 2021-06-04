@@ -9,5 +9,5 @@ comment or approve PRs in one time
   - REPO_NAME should be like `koki-miyazaki/github-tool`
 - open `irb`
 - type `require './script.rb'`
-- set pr_numbers as you like `pr_numbers = (2000..2010).map(&:to_i)`
+- set pr_numbers as you like `pr_numbers = (2000..2010).to_a`
 - type `comment_prs(pr_numbers, 'any comments')` or `approve_prs(pr_numbers)`
