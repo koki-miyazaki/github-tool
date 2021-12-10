@@ -23,10 +23,12 @@ GEM
       faraday (> 0.8, < 2.0)
 
 PLATFORMS
+  universal-darwin-20
+  universal-darwin-21
   x86_64-darwin-18
 
 DEPENDENCIES
   octokit
 
 BUNDLED WITH
-   2.2.11
+   2.2.29
