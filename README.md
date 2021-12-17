@@ -9,4 +9,4 @@ Comment or approve PRs in one time
   - REPO_NAME should be like `koki-miyazaki/github-tool`
 - Open `irb -r ./gh_tool.rb`
 - Approve PRs by `approve_prs([1234])`. Note that 1234 is a PR number to approve.
-- Comment PRs by `comment_prs([1234, 5678], 'any comments')`.
+- Comment PRs by `comment_prs([1234, 5678], '@dependabot rebase')`.

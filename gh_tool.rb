@@ -10,7 +10,7 @@ REPO_NAME = ENV['REPO_NAME']
 # @param comment [String] The comment message
 def comment_prs(pr_numbers = [], comment)
   pr_numbers.each do |num|
-    res = @client.post(comment_url(num), body: comment)
+    res = @client.post(comments_url(num), body: comment)
   end
 end
 
@@ -51,5 +51,5 @@ end
 
 # e.g. https://api.github.com/repos/some/repo/issues/123/comments
 def comments_url(pr_num)
-  'https://api.github.com/repos/' + REPO_NAME + '/issues/' + num.to_s + '/comments'
+  'https://api.github.com/repos/' + REPO_NAME + '/issues/' + pr_num.to_s + '/comments'
 end
